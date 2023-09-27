@@ -1,6 +1,9 @@
+import java.lang.reflect.Array;
+
 class sorter{
     public static void main(String[] args) {
         System.out.println("hello world");
+
     }
     public static void selectionSort(int[] arr){  
         for (int i = 0; i < arr.length - 1; i++)  
@@ -15,9 +18,26 @@ class sorter{
             arr[index] = arr[i];  
             arr[i] = smallerNumber;  
         }  
+
     } 
     public
-    public static void sort(int[] arr){
+    public static void sort1(int[] arr){
         selectionSort(arr);
+
+    }
+    public static void insertionSort(int array[]) {
+        int n = array.length;
+        for (int j = 1; j < n; j++) {
+            int key = array[j];
+            int i = j-1;
+            while ( (i > -1) && ( array [i] > key ) ) {
+                array [i+1] = array [i];
+                i--;
+            }
+            array[i+1] = key;
+        }
+    }
+    public static void sort( int array[]){
+        insertionSort(array);
     }
 }
