@@ -16,4 +16,8 @@ class sorter{
             arr[i] = smallerNumber;  
         }  
     } 
+    public
+    public static void sort(int[] arr){
+        selectionSort(arr);
+    }
 }
