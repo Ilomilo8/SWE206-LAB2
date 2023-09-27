@@ -20,7 +20,7 @@ class sorter{
         }  
 
     } 
-    public
+  
     public static void sort1(int[] arr){
         selectionSort(arr);
 
